@@ -25,5 +25,6 @@ To create a transparent, trustless, and secure ecosystem where real estate asset
 - Escrow functionality to enhance trust during transactions.
 - IPFS/Filecoin integration for storing legal documents.
 - Property history tracking and resale features.
+![Screenshot 2025-04-22 185112](https://github.com/user-attachments/assets/9036c568-2200-416a-8246-1c18b9dcc762)
 
 
