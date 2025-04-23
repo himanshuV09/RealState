@@ -43,9 +43,18 @@ contract RealEstate {
         payable(prevOwner).transfer(msg.value);
     }
 
+    //Function to mark a property for resale by its current owner
+    function resellProperty(uint _id, uint _newPrice) public {
+        Property storage property = properties[_id];
+        require(msg.sender == property.currentOwner, "Only current owner can resell this property");
+        require(!property.isAvailable, "Property is already available");
+
+        property.price = _newPrice;
+        property.isAvailable = true;
+    }
+
     function getProperty(uint _id) public view returns (string memory, uint, address, bool) {
         Property storage property = properties[_id];
         return (property.location, property.price, property.currentOwner, property.isAvailable);
     }
 }
-
