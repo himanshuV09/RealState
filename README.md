@@ -26,8 +26,8 @@ To create a transparent, trustless, and secure ecosystem where real estate asset
 - IPFS/Filecoin integration for storing legal documents.
 - Property history tracking and resale features.
 
-## contract detail: 0xDbEd46200F8024A9e135D44Fc82FC43701Abf8B8
-![image](https://github.com/user-attachments/assets/2020b762-6b4a-464e-b59b-06fcca4e4ec2)
+## contract detail: 0xD2B9967233B876560D0b6CdA98EbaCe933F11645
+![image](https://github.com/user-attachments/assets/d56806f5-7cc7-46e3-b5cf-b39f860fa477)
 
 
 
