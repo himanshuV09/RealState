@@ -55,7 +55,6 @@ contract RealEstate {
         return (property.location, property.price, property.currentOwner, property.isAvailable);
     }
 
-    //Get all available properties for sale
     function getAvailableProperties() public view returns (uint[] memory) {
         uint count = 0;
         for (uint i = 1; i <= propertyCount; i++) {
@@ -74,5 +73,11 @@ contract RealEstate {
         }
 
         return available;
+    }
+
+    //Remove a property from listing
+    function removeProperty(uint _id) public onlyOwner {
+        require(properties[_id].id != 0, "Property does not exist");
+        delete properties[_id];
     }
 }
